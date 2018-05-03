@@ -15,7 +15,7 @@
    1. Save the integration. This will generate a webhook URL and secret for you.
    1. Use the generated **WebHook URL** to POST messages to Rocket.Chat
 1. Go to [Trello's REST API](https://developers.trello.com/v1.0/reference) and enter your [Trello API Key](https://trello.com/app-key) and your Token to get started.
-   1. After you have been connected to the Trello’s REST API you may wish to **[Get /boards/{id}](https://developers.trello.com/v1.0/reference#boardsboardid-1)** which request a single board you are looking for, by providing the **ID** of the board as a parameter (For example in the URL https://trello.com/b/Id0fth3B0rD/board-name, the ID would be `Id0fth3B0rD`). Press **Try it** to get the result.
+   1. Get a board's idModel by entering the url of the board and appending .json to the end (eg; https://trello.com/b/4N4GSasC/fundraising.json) and copying the id.
    1. Select `"id": "idModel"` of a board which you would like to create POST messages to Rocket.Chat.
    1. Go to **[Create Webhook](https://developers.trello.com/v1.0/reference#webhooks-2)** in the Trello’s REST API and add your WebHook URL (**callbackURL**), Board Id (**idModel**) and other parameters as below:
    ```javascript
